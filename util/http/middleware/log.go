@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	util_logger "backend-template/util/logger"
+	util_logger "amartha-technical-interview/util/logger"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

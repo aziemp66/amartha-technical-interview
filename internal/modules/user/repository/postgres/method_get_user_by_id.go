@@ -3,7 +3,7 @@ package user_repository_postgres
 import (
 	"context"
 
-	user_model "backend-template/internal/modules/user/model"
+	user_model "amartha-technical-interview/internal/modules/user/model"
 )
 
 // GetUserByID retrieves a user from the database based on their ID.

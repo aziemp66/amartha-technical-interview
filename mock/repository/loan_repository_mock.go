@@ -10,7 +10,7 @@
 package mock_repository
 
 import (
-	loan_model "backend-template/internal/modules/loan/model"
+	loan_model "amartha-technical-interview/internal/modules/loan/model"
 	context "context"
 	reflect "reflect"
 

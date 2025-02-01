@@ -1,9 +1,9 @@
 package user_http_router
 
 import (
-	user_http "backend-template/internal/modules/user/http"
-	util_http_middleware "backend-template/util/http/middleware"
-	util_jwt "backend-template/util/jwt"
+	user_http "amartha-technical-interview/internal/modules/user/http"
+	util_http_middleware "amartha-technical-interview/util/http/middleware"
+	util_jwt "amartha-technical-interview/util/jwt"
 
 	"github.com/gin-gonic/gin"
 )

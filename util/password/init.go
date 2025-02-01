@@ -4,7 +4,7 @@ import (
 	"errors"
 	"regexp"
 
-	util_error "backend-template/util/error"
+	util_error "amartha-technical-interview/util/error"
 
 	"golang.org/x/crypto/bcrypt"
 )

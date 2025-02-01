@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	user_model "backend-template/internal/modules/user/model"
-	util_error "backend-template/util/error"
+	user_model "amartha-technical-interview/internal/modules/user/model"
+	util_error "amartha-technical-interview/util/error"
 )
 
 func (userService *userService) GetUserByID(ctx context.Context, id string) (res user_model.GetUserResponse, err error) {

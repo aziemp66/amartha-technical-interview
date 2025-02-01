@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	user_model "backend-template/internal/modules/user/model"
+	user_model "amartha-technical-interview/internal/modules/user/model"
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/jmoiron/sqlx"

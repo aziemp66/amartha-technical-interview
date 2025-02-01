@@ -1,9 +1,9 @@
 package user_http
 
 import (
-	user_model "backend-template/internal/modules/user/model"
-	util_error "backend-template/util/error"
-	util_http "backend-template/util/http"
+	user_model "amartha-technical-interview/internal/modules/user/model"
+	util_error "amartha-technical-interview/util/error"
+	util_http "amartha-technical-interview/util/http"
 
 	"github.com/gin-gonic/gin"
 )

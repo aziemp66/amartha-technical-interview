@@ -1,7 +1,7 @@
 package user_repository_postgres
 
 import (
-	user_repository "backend-template/internal/modules/user/repository"
+	user_repository "amartha-technical-interview/internal/modules/user/repository"
 
 	"github.com/jmoiron/sqlx"
 )

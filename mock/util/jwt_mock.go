@@ -10,7 +10,7 @@
 package mock_util
 
 import (
-	util_jwt "backend-template/util/jwt"
+	util_jwt "amartha-technical-interview/util/jwt"
 	reflect "reflect"
 	time "time"
 

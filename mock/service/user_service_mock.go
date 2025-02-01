@@ -10,7 +10,7 @@
 package mock_service
 
 import (
-	user_model "backend-template/internal/modules/user/model"
+	user_model "amartha-technical-interview/internal/modules/user/model"
 	context "context"
 	reflect "reflect"
 

@@ -1,7 +1,7 @@
 package user_service
 
 import (
-	util_error "backend-template/util/error"
+	util_error "amartha-technical-interview/util/error"
 	"context"
 	"database/sql"
 	"fmt"

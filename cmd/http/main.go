@@ -8,12 +8,12 @@ import (
 	"syscall"
 	"time"
 
-	init_app "backend-template/internal"
-	pkg_config "backend-template/internal/pkg/config"
-	util_db "backend-template/util/db"
-	util_http "backend-template/util/http"
-	util_http_middleware "backend-template/util/http/middleware"
-	util_logger "backend-template/util/logger"
+	init_app "amartha-technical-interview/internal"
+	pkg_config "amartha-technical-interview/internal/pkg/config"
+	util_db "amartha-technical-interview/util/db"
+	util_http "amartha-technical-interview/util/http"
+	util_http_middleware "amartha-technical-interview/util/http/middleware"
+	util_logger "amartha-technical-interview/util/logger"
 
 	"github.com/gin-gonic/gin"
 )

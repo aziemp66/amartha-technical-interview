@@ -1,8 +1,8 @@
 package user_service
 
 import (
-	util_error "backend-template/util/error"
-	util_jwt "backend-template/util/jwt"
+	util_error "amartha-technical-interview/util/error"
+	util_jwt "amartha-technical-interview/util/jwt"
 	"context"
 	"database/sql"
 	"time"

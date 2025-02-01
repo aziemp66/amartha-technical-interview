@@ -1,10 +1,10 @@
 package user_service
 
 import (
-	user_model "backend-template/internal/modules/user/model"
-	mock_repository "backend-template/mock/repository"
-	mock_util "backend-template/mock/util"
-	util_error "backend-template/util/error"
+	user_model "amartha-technical-interview/internal/modules/user/model"
+	mock_repository "amartha-technical-interview/mock/repository"
+	mock_util "amartha-technical-interview/mock/util"
+	util_error "amartha-technical-interview/util/error"
 	"context"
 	"errors"
 	"fmt"

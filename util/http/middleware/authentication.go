@@ -1,9 +1,9 @@
 package util_http_middleware
 
 import (
-	util_error "backend-template/util/error"
-	util_http "backend-template/util/http"
-	util_jwt "backend-template/util/jwt"
+	util_error "amartha-technical-interview/util/error"
+	util_http "amartha-technical-interview/util/http"
+	util_jwt "amartha-technical-interview/util/jwt"
 	"errors"
 
 	"github.com/gin-gonic/gin"

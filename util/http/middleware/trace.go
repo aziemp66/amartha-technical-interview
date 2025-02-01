@@ -3,7 +3,7 @@ package util_http_middleware
 import (
 	"context"
 
-	util_http "backend-template/util/http"
+	util_http "amartha-technical-interview/util/http"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

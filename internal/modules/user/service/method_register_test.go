@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	user_model "backend-template/internal/modules/user/model"
-	mock_repository "backend-template/mock/repository"
-	mock_util "backend-template/mock/util"
-	util_error "backend-template/util/error"
-	util_jwt "backend-template/util/jwt"
+	user_model "amartha-technical-interview/internal/modules/user/model"
+	mock_repository "amartha-technical-interview/mock/repository"
+	mock_util "amartha-technical-interview/mock/util"
+	util_error "amartha-technical-interview/util/error"
+	util_jwt "amartha-technical-interview/util/jwt"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

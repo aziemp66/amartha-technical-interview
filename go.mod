@@ -1,4 +1,4 @@
-module backend-template
+module amartha-technical-interview
 
 go 1.23.1
 

@@ -1,8 +1,8 @@
 package loan_repository_postgres
 
 import (
-	loan_model "backend-template/internal/modules/loan/model"
-	util_error "backend-template/util/error"
+	loan_model "amartha-technical-interview/internal/modules/loan/model"
+	util_error "amartha-technical-interview/util/error"
 	"context"
 	"database/sql"
 

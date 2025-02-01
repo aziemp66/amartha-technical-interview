@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	util_error "backend-template/util/error"
-	util_http "backend-template/util/http"
+	util_error "amartha-technical-interview/util/error"
+	util_http "amartha-technical-interview/util/http"
 )
 
 func ErrorHandlerMiddleware() gin.HandlerFunc {

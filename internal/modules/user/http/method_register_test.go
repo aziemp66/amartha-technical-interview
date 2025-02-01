@@ -1,13 +1,13 @@
 package user_http
 
 import (
-	user_model "backend-template/internal/modules/user/model"
-	mock_service "backend-template/mock/service"
-	mock_util "backend-template/mock/util"
-	util_error "backend-template/util/error"
-	util_http "backend-template/util/http"
-	util_http_middleware "backend-template/util/http/middleware"
-	util_logger "backend-template/util/logger"
+	user_model "amartha-technical-interview/internal/modules/user/model"
+	mock_service "amartha-technical-interview/mock/service"
+	mock_util "amartha-technical-interview/mock/util"
+	util_error "amartha-technical-interview/util/error"
+	util_http "amartha-technical-interview/util/http"
+	util_http_middleware "amartha-technical-interview/util/http/middleware"
+	util_logger "amartha-technical-interview/util/logger"
 	"bytes"
 	"encoding/json"
 	"net/http"

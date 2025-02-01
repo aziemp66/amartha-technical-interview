@@ -1,7 +1,7 @@
 package loan_repository_postgres
 
 import (
-	loan_repository "backend-template/internal/modules/loan/repository"
+	loan_repository "amartha-technical-interview/internal/modules/loan/repository"
 
 	"github.com/jmoiron/sqlx"
 )

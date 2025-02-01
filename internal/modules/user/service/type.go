@@ -3,7 +3,7 @@ package user_service
 import (
 	"context"
 
-	user_model "backend-template/internal/modules/user/model"
+	user_model "amartha-technical-interview/internal/modules/user/model"
 )
 
 // UserService defines the operations for managing users at the service level.

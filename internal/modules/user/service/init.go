@@ -1,9 +1,9 @@
 package user_service
 
 import (
-	user_repository "backend-template/internal/modules/user/repository"
-	util_jwt "backend-template/util/jwt"
-	util_password "backend-template/util/password"
+	user_repository "amartha-technical-interview/internal/modules/user/repository"
+	util_jwt "amartha-technical-interview/util/jwt"
+	util_password "amartha-technical-interview/util/password"
 )
 
 type userService struct {

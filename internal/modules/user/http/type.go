@@ -1,8 +1,8 @@
 package user_http
 
 import (
-	user_service "backend-template/internal/modules/user/service"
-	util_jwt "backend-template/util/jwt"
+	user_service "amartha-technical-interview/internal/modules/user/service"
+	util_jwt "amartha-technical-interview/util/jwt"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,7 +1,7 @@
 package loan_repository_postgres
 
 import (
-	loan_model "backend-template/internal/modules/loan/model"
+	loan_model "amartha-technical-interview/internal/modules/loan/model"
 	"context"
 
 	"github.com/google/uuid"

@@ -3,7 +3,7 @@ package user_repository
 import (
 	"context"
 
-	user_model "backend-template/internal/modules/user/model"
+	user_model "amartha-technical-interview/internal/modules/user/model"
 )
 
 // UserRepository defines the set of operations for interacting with the user data at the repository level.
