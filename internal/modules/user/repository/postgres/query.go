@@ -19,8 +19,4 @@ const (
 	deleteUserQuery = `
 	DELETE FROM user WHERE id = $1
 	`
-
-	verifyUserQuery = `
-	UPDATE user set is_verified = true WHERE id = $1
-	`
 )

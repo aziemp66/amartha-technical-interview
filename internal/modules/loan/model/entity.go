@@ -11,7 +11,7 @@ type Loan struct {
 	UserID                 uuid.UUID `db:"user_id"`
 	Principal              float64   `db:"pricipal"`
 	InterestRatePercentage float64   `db:"interest_rate_percentage"`
-	WeeklyPayment          int       `db:"weekly_payment"`
+	WeeklyInstallments     int       `db:"weekly_installments"`
 	PaidWeeks              int       `db:"paid_weeks"`
 	LoanStartDate          time.Time `db:"loan_start_date"`
 }
