@@ -13,7 +13,9 @@ import (
 	util_db "amartha-technical-interview/util/db"
 	util_http "amartha-technical-interview/util/http"
 	util_http_middleware "amartha-technical-interview/util/http/middleware"
+	util_jwt "amartha-technical-interview/util/jwt"
 	util_logger "amartha-technical-interview/util/logger"
+	util_password "amartha-technical-interview/util/password"
 
 	"github.com/gin-gonic/gin"
 )
@@ -25,6 +27,8 @@ func main() {
 
 	config := pkg_config.LoadConfig()
 	pgDB := util_db.NewPostgresDB(config.PostgresHost, config.PostgresUser, config.PostgresPassword, config.PostgresDbName, config.PostgresPort)
+	jwtManager := util_jwt.NewjwtManager(config.AppJwtSecret)
+	passwordManager := util_password.NewPasswordManager(20)
 
 	router := util_http.NewHTTPServer(config.AppEnv)
 	util_logger.InitLogger(config.AppEnv, config.AppName, config.AppLogPath)
@@ -36,7 +40,7 @@ func main() {
 		util_http_middleware.ErrorHandlerMiddleware(),
 	)
 
-	init_app.InitializeApp(router, pgDB)
+	init_app.InitializeApp(router, pgDB, jwtManager, passwordManager)
 
 	srv := &http.Server{
 		Addr:    ":8080",
