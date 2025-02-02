@@ -43,7 +43,7 @@ func (m *MockLoanRepository) EXPECT() *MockLoanRepositoryMockRecorder {
 }
 
 // CreateLoan mocks base method.
-func (m *MockLoanRepository) CreateLoan(ctx context.Context, userID string, principal, interestRatePercentage, weeklyInstallments float64) (string, error) {
+func (m *MockLoanRepository) CreateLoan(ctx context.Context, userID uuid.UUID, principal, interestRatePercentage, weeklyInstallments float64) (string, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "CreateLoan", ctx, userID, principal, interestRatePercentage, weeklyInstallments)
 	ret0, _ := ret[0].(string)
@@ -70,13 +70,13 @@ func (c *MockLoanRepositoryCreateLoanCall) Return(id string, err error) *MockLoa
 }
 
 // Do rewrite *gomock.Call.Do
-func (c *MockLoanRepositoryCreateLoanCall) Do(f func(context.Context, string, float64, float64, float64) (string, error)) *MockLoanRepositoryCreateLoanCall {
+func (c *MockLoanRepositoryCreateLoanCall) Do(f func(context.Context, uuid.UUID, float64, float64, float64) (string, error)) *MockLoanRepositoryCreateLoanCall {
 	c.Call = c.Call.Do(f)
 	return c
 }
 
 // DoAndReturn rewrite *gomock.Call.DoAndReturn
-func (c *MockLoanRepositoryCreateLoanCall) DoAndReturn(f func(context.Context, string, float64, float64, float64) (string, error)) *MockLoanRepositoryCreateLoanCall {
+func (c *MockLoanRepositoryCreateLoanCall) DoAndReturn(f func(context.Context, uuid.UUID, float64, float64, float64) (string, error)) *MockLoanRepositoryCreateLoanCall {
 	c.Call = c.Call.DoAndReturn(f)
 	return c
 }

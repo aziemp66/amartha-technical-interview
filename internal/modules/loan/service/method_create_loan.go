@@ -14,7 +14,7 @@ func (loanService *loanService) CreateLoan(ctx context.Context, req loan_model.C
 		return "", util_error.NewBadRequest(err, "ID is not in uuid format")
 	}
 
-	id, err = loanService.loanRepository.CreateLoan(ctx, parsedID, req.Principal, req.InterestRatePercentage, req.WeeklyInstallments)
+	id, err = loanService.loanRepository.CreateLoan(ctx, parsedID, req.Principal, req.InterestRatePercentage, req.WeeklyInstallments, req.LoanStartDate)
 	if err != nil {
 		return "", err
 	}

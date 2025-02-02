@@ -80,41 +80,41 @@ func (c *MockLoanServiceCreateLoanCall) DoAndReturn(f func(context.Context, loan
 	return c
 }
 
-// GetAllUserLoan mocks base method.
-func (m *MockLoanService) GetAllUserLoan(ctx context.Context, userID string) ([]loan_model.Loan, error) {
+// GetAllUserLoans mocks base method.
+func (m *MockLoanService) GetAllUserLoans(ctx context.Context, userID string) ([]loan_model.Loan, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetAllUserLoan", ctx, userID)
+	ret := m.ctrl.Call(m, "GetAllUserLoans", ctx, userID)
 	ret0, _ := ret[0].([]loan_model.Loan)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetAllUserLoan indicates an expected call of GetAllUserLoan.
-func (mr *MockLoanServiceMockRecorder) GetAllUserLoan(ctx, userID any) *MockLoanServiceGetAllUserLoanCall {
+// GetAllUserLoans indicates an expected call of GetAllUserLoans.
+func (mr *MockLoanServiceMockRecorder) GetAllUserLoans(ctx, userID any) *MockLoanServiceGetAllUserLoansCall {
 	mr.mock.ctrl.T.Helper()
-	call := mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAllUserLoan", reflect.TypeOf((*MockLoanService)(nil).GetAllUserLoan), ctx, userID)
-	return &MockLoanServiceGetAllUserLoanCall{Call: call}
+	call := mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAllUserLoans", reflect.TypeOf((*MockLoanService)(nil).GetAllUserLoans), ctx, userID)
+	return &MockLoanServiceGetAllUserLoansCall{Call: call}
 }
 
-// MockLoanServiceGetAllUserLoanCall wrap *gomock.Call
-type MockLoanServiceGetAllUserLoanCall struct {
+// MockLoanServiceGetAllUserLoansCall wrap *gomock.Call
+type MockLoanServiceGetAllUserLoansCall struct {
 	*gomock.Call
 }
 
 // Return rewrite *gomock.Call.Return
-func (c *MockLoanServiceGetAllUserLoanCall) Return(arg0 []loan_model.Loan, arg1 error) *MockLoanServiceGetAllUserLoanCall {
+func (c *MockLoanServiceGetAllUserLoansCall) Return(arg0 []loan_model.Loan, arg1 error) *MockLoanServiceGetAllUserLoansCall {
 	c.Call = c.Call.Return(arg0, arg1)
 	return c
 }
 
 // Do rewrite *gomock.Call.Do
-func (c *MockLoanServiceGetAllUserLoanCall) Do(f func(context.Context, string) ([]loan_model.Loan, error)) *MockLoanServiceGetAllUserLoanCall {
+func (c *MockLoanServiceGetAllUserLoansCall) Do(f func(context.Context, string) ([]loan_model.Loan, error)) *MockLoanServiceGetAllUserLoansCall {
 	c.Call = c.Call.Do(f)
 	return c
 }
 
 // DoAndReturn rewrite *gomock.Call.DoAndReturn
-func (c *MockLoanServiceGetAllUserLoanCall) DoAndReturn(f func(context.Context, string) ([]loan_model.Loan, error)) *MockLoanServiceGetAllUserLoanCall {
+func (c *MockLoanServiceGetAllUserLoansCall) DoAndReturn(f func(context.Context, string) ([]loan_model.Loan, error)) *MockLoanServiceGetAllUserLoansCall {
 	c.Call = c.Call.DoAndReturn(f)
 	return c
 }
@@ -237,7 +237,7 @@ func (c *MockLoanServiceIsDelinquentCall) DoAndReturn(f func(context.Context, st
 }
 
 // MakePayment mocks base method.
-func (m *MockLoanService) MakePayment(ctx context.Context, id, amount string) error {
+func (m *MockLoanService) MakePayment(ctx context.Context, id string, amount float64) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "MakePayment", ctx, id, amount)
 	ret0, _ := ret[0].(error)
@@ -263,13 +263,13 @@ func (c *MockLoanServiceMakePaymentCall) Return(arg0 error) *MockLoanServiceMake
 }
 
 // Do rewrite *gomock.Call.Do
-func (c *MockLoanServiceMakePaymentCall) Do(f func(context.Context, string, string) error) *MockLoanServiceMakePaymentCall {
+func (c *MockLoanServiceMakePaymentCall) Do(f func(context.Context, string, float64) error) *MockLoanServiceMakePaymentCall {
 	c.Call = c.Call.Do(f)
 	return c
 }
 
 // DoAndReturn rewrite *gomock.Call.DoAndReturn
-func (c *MockLoanServiceMakePaymentCall) DoAndReturn(f func(context.Context, string, string) error) *MockLoanServiceMakePaymentCall {
+func (c *MockLoanServiceMakePaymentCall) DoAndReturn(f func(context.Context, string, float64) error) *MockLoanServiceMakePaymentCall {
 	c.Call = c.Call.DoAndReturn(f)
 	return c
 }
